@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jathurshan Pradeepkumar | CS PhD @ UIUC</title>
+    <meta name="description" content="PhD Candidate in Computer Science at UIUC, researching EEG representation learning and AI for healthcare.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">Jathurshan P.</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="publications.html">All Papers</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1>Jathurshan Pradeepkumar</h1>
+                <p class="subtitle">CS PhD Candidate @ <a href="https://cs.illinois.edu/">UIUC</a> · <a href="https://www.sunlab.org/">Sun Lab</a></p>
+                <p class="intro">I develop representation learning and self-supervised methods for biosignals and EEG, and build AI systems to improve cancer care and clinical trials. Previously, I was a post-baccalaureate fellow at Harvard.</p>
+                <div class="research-areas">
+                    <span class="research-tag primary">EEG & Biosignal Modeling</span>
+                    <span class="research-tag">Self-Supervised Learning</span>
+                    <span class="research-tag">AI for Healthcare</span>
+                    <span class="research-tag">Clinical Trials</span>
+                </div>
+                <div class="hiring-notice">
+                    <strong>🔍 Seeking Summer 2026 Internship</strong> — Open to research-focused roles in ML/AI for healthcare. <a href="mailto:jp65@illinois.edu">Let's connect!</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:jp65@illinois.edu" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com.au/citations?user=muYswsUAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                    <a href="https://github.com/Jathurshan0330" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jathurshan-pradeepkumar-319b52104" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/JathuPradeep" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://drive.google.com/file/d/1-DPE2PWyNaPasEPv7WJsq1bXVlbpPp0e/view" class="cv-button"><i class="fas fa-file-pdf"></i> CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="photo-container" id="photoContainer">
+                    <img src="assets/img/profile.jpg" alt="Jathurshan Pradeepkumar" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'">
+                    <div class="photo-placeholder"><i class="fas fa-user"></i><p>Add your photo<br><code>assets/img/profile.jpg</code></p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="section-inner">
+            <h2 class="section-title">Recent News</h2>
+            <div class="news-list">
+                <div class="news-item"><span class="news-date">Jan 2026</span><div class="news-content">Two papers (<a href="#">TFM-Tokenizer</a> and ODEBrain) accepted to <strong>ICLR 2026</strong>! 🚀</div></div>
+                <div class="news-item"><span class="news-date">Nov 2025</span><div class="news-content">Served as <strong>Junior Chair</strong> for drug discovery research roundtable at ML4H 2025.</div></div>
+                <div class="news-item"><span class="news-date">Oct 2025</span><div class="news-content">Research project I mentored under PyHealth Research Initiative accepted to <strong>ML4H 2025</strong>! 🚀</div></div>
+                <div class="news-item"><span class="news-date">Sep 2025</span><div class="news-content"><a href="https://arxiv.org/abs/2502.16060">Single Channel EEG Tokenization</a> accepted as <span class="badge spotlight">Spotlight</span> at NeurIPS TS4H 2025!</div></div>
+                <div class="news-item"><span class="news-date">Jun 2025</span><div class="news-content"><a href="https://www.medrxiv.org/content/10.1101/2025.03.27.25324782v1">Survivorship Navigator</a> accepted for <span class="badge oral">Oral</span> at AMIA 2025!</div></div>
+                <div class="news-item"><span class="news-date">Aug 2024</span><div class="news-content"><a href="https://ieeexplore.ieee.org/abstract/document/10623416">Interpretable cross-modal transformers</a> for sleep staging published in IEEE TNSRE!</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <div class="section-inner">
+            <h2 class="section-title">Selected Publications</h2>
+            <div class="pub-category">
+                <h3>🧠 Biosignal & EEG Representation Learning</h3>
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <div class="pub-year">2025 · ICLR 2026</div>
+                        <div class="pub-title">Tokenizing Single-Channel EEG with Time-Frequency Motif Learning</div>
+                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, X. Piao, Z. Chen, J. Sun</div>
+                        <div class="pub-venue">ICLR 2026 (also Spotlight at NeurIPS TS4H 2025)</div>
+                        <div class="pub-links"><a href="https://arxiv.org/abs/2502.16060"><i class="fas fa-file-pdf"></i> Paper</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                    </div>
+                    <div class="pub-item">
+                        <div class="pub-year">2024 · IEEE TNSRE</div>
+                        <div class="pub-title">Towards Interpretable Sleep Stage Classification Using Cross-Modal Transformers</div>
+                        <div class="pub-authors"><strong>J. Pradeepkumar*</strong>, M. Anandakumar*, V. Kugathasan, et al.</div>
+                        <div class="pub-venue">IEEE Transactions on Neural Systems and Rehabilitation Engineering</div>
+                        <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/10623416"><i class="fas fa-file-pdf"></i> Paper</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-category">
+                <h3>🏥 AI for Cancer Care & Clinical Trials</h3>
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <div class="pub-year">2025 · AMIA (Oral)</div>
+                        <div class="pub-title">Survivorship Navigator: Personalized Survivorship Care Plan Generation using Large Language Models</div>
+                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, S. Pankaj Kumar, C.B. Reamer, et al.</div>
+                        <div class="pub-venue">AMIA 2025 Annual Symposium</div>
+                        <div class="pub-links"><a href="https://www.medrxiv.org/content/10.1101/2025.03.27.25324782v1"><i class="fas fa-file-pdf"></i> Paper</a><a href="#"><i class="fab fa-github"></i> Code</a><a href="#"><i class="fas fa-play-circle"></i> Demo</a></div>
+                    </div>
+                    <div class="pub-item">
+                        <div class="pub-year">2024 · Under Review</div>
+                        <div class="pub-title">Automatically Labeling Clinical Trial Outcomes: A Large-Scale Benchmark</div>
+                        <div class="pub-authors">C. Gao*, <strong>J. Pradeepkumar*</strong>, T. Das*, et al.</div>
+                        <div class="pub-venue">Under review at Nature Health</div>
+                        <div class="pub-links"><a href="#"><i class="fas fa-file-pdf"></i> Paper</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:2rem"><a href="publications.html" class="view-all-link">View all publications <i class="fas fa-arrow-right"></i></a></p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-inner">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header"><span class="timeline-role">PhD Student</span><span class="timeline-date">Aug 2023 – Present</span></div>
+                    <div class="timeline-org">Sun Lab, University of Illinois Urbana-Champaign</div>
+                    <div class="timeline-desc">Leading research on tokenization and self-supervised learning for biosignals/EEG. Developing LLM-based systems for cancer survivorship care.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header"><span class="timeline-role">AI Research Intern</span><span class="timeline-date">May – Aug 2024</span></div>
+                    <div class="timeline-org">GE Healthcare</div>
+                    <div class="timeline-desc">Developed RAG-based systems for cancer care applications.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header"><span class="timeline-role">Post-Baccalaureate Fellow</span><span class="timeline-date">July 2022 – July 2023</span></div>
+                    <div class="timeline-org">The Center for Advanced Imaging, Harvard University</div>
+                    <div class="timeline-desc">Developed weakly supervised methods for cell quantification. Built efficient WSI scanning systems.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header"><span class="timeline-role">Undergraduate Researcher</span><span class="timeline-date">June 2021 – July 2022</span></div>
+                    <div class="timeline-org">Biomedical Research Group, University of Moratuwa</div>
+                    <div class="timeline-desc">Thesis: Interpretable Multi-Modal Sleep Monitoring using Ear-EEG and EOG.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-inner">
+            <h2 class="section-title">Professional Services</h2>
+            <div class="services-grid">
+                <div class="service-category">
+                    <h3><i class="fas fa-user-tie"></i> Conference Organization</h3>
+                    <ul class="service-list">
+                        <li><span class="service-role">Junior Chair - Drug Discovery Roundtable</span><div class="service-venue">ML4H 2025</div></li>
+                        <li><span class="service-role">Workshop Organizer</span><div class="service-venue">IEEE EMBS Int'l Student Conference 2021</div></li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3><i class="fas fa-search"></i> Reviewing</h3>
+                    <ul class="service-list">
+                        <li><span class="service-role">IEEE J-BHI</span><div class="service-venue">2024</div></li>
+                        <li><span class="service-role">IEEE ICASSP</span><div class="service-venue">2023, 2024, 2025</div></li>
+                        <li><span class="service-role">ECCV L2ID Workshop</span><div class="service-venue">2022</div></li>
+                        <li><span class="service-role">ML4H, NeurIPS TS4H</span><div class="service-venue">2025</div></li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring</h3>
+                    <ul class="service-list">
+                        <li><span class="service-role">TA - CS598 DL for Healthcare</span><div class="service-venue">UIUC, Spring 2025</div></li>
+                        <li><span class="service-role">Research Mentor - PyHealth</span><div class="service-venue">→ ML4H 2025 paper</div></li>
+                        <li><span class="service-role">Project Mentor - Spark Challenge</span><div class="service-venue">2022</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-inner">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-grid">
+                <div class="edu-card"><div class="edu-icon">🎓</div><div class="edu-info"><h4>University of Illinois Urbana-Champaign</h4><p class="degree">PhD in Computer Science</p><p class="year">2023 – 2028 (Expected)</p></div></div>
+                <div class="edu-card"><div class="edu-icon">🎓</div><div class="edu-info"><h4>University of Moratuwa, Sri Lanka</h4><p class="degree">B.S. in Biomedical Engineering</p><p class="year">2018 – 2022 · First Class Honors</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards">
+        <div class="section-inner">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="awards-grid">
+                <div class="award-item"><div class="award-icon">🏆</div><div class="award-info"><h4>First Class (Honors) & Dean's List</h4><p>B.S. in Biomedical Engineering, 2022</p></div></div>
+                <div class="award-item"><div class="award-icon">🥈</div><div class="award-info"><h4>2nd Runner-up, VIP Cup</h4><p>ICIP 2021, Anchorage</p></div></div>
+                <div class="award-item"><div class="award-icon">🥇</div><div class="award-info"><h4>IEEE SMC Winners, BR4IN.IO</h4><p>IEEE SMC 2020, Toronto</p></div></div>
+                <div class="award-item"><div class="award-icon">🎖️</div><div class="award-info"><h4>MIND Scholarship</h4><p>National Award, 2022</p></div></div>
+                <div class="award-item"><div class="award-icon">📚</div><div class="award-info"><h4>Mahapola Merit Scholarship</h4><p>National Award, 2017</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="mailto:jp65@illinois.edu"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com.au/citations?user=muYswsUAAAAJ"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://github.com/Jathurshan0330"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jathurshan-pradeepkumar-319b52104"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/JathuPradeep"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <p>© 2026 Jathurshan Pradeepkumar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
