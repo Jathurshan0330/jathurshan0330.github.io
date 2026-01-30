@@ -72,6 +72,8 @@ nav .logo {
     font-size: 1.1rem;
     color: var(--color-text);
     text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 nav .nav-links {
@@ -632,6 +634,14 @@ footer p { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
 /* Responsive */
 @media (max-width: 768px) {
     .mobile-menu-btn { display: block; }
+
+    nav .nav-inner {
+        flex-wrap: nowrap;
+    }
+
+    nav .logo {
+        font-size: 0.95rem;
+    }
 
     nav .nav-links {
         display: none;
