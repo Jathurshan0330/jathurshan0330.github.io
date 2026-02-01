@@ -3,9 +3,10 @@
     --color-bg-alt: #f0efec;
     --color-text: #1a1a1a;
     --color-text-muted: #5a5a5a;
-    --color-accent: #2563eb;
+    --color-accent: #FC8D62;
     --color-accent-hover: #1d4ed8;
-    --color-highlight: #fef3c7;
+    /* --color-highlight: #fef3c7; */
+    --color-highlight: #B3D6FF;
     --color-border: #e5e5e5;
     --color-card: #ffffff;
     --color-nav-bg: rgba(250, 249, 247, 0.9);
@@ -181,11 +182,13 @@ nav .nav-links a:hover { color: var(--color-accent); }
     border-radius: 4px;
     font-size: 0.85rem;
     font-weight: 500;
+    border: 1px solid #000000;
 }
 
 .research-tag.primary {
     background: var(--color-accent);
-    color: white;
+    /* color: white; */
+    /* color: black; */
 }
 
 .hiring-notice {
@@ -265,7 +268,7 @@ nav .nav-links a:hover { color: var(--color-accent); }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* box-shadow: var(--shadow-md); */
+    box-shadow: var(--shadow-md);
 }
 
 .photo-container img {
