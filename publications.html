@@ -15,14 +15,16 @@
 <body>
     <nav>
         <div class="nav-inner">
-            <a href="index.html" class="logo">Jathurshan P.</a>
+            <a href="index.html" class="logo">Jathurshan Pradeepkumar</a>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#news">News</a></li>
-                <li><a href="#" class="active">Publications</a></li>
-                <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="index.html#services">Service</a></li>
+                <!-- <li><a href="#news">News</a></li> -->
+                <!-- <li><a href="#publications">Publications</a></li> -->
+                <li><a href="publications.html"><strong>Publications</strong></a></li>
+                <li><a href="https://drive.google.com/file/d/1-DPE2PWyNaPasEPv7WJsq1bXVlbpPp0e/view"><strong>CV</strong></a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
+                <!-- <li><a href="#services">Service</a></li> -->
                 <li><button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button></li>
             </ul>
         </div>
@@ -32,7 +34,7 @@
         <div class="section-inner">
             <h1 style="font-family: var(--font-name); font-size: 2.5rem; font-weight: 900; margin-bottom: 0.5rem;">Publications</h1>
             <p style="color: var(--color-text-muted); margin-bottom: 2rem;">
-                Full list of publications. <a href="https://scholar.google.com.au/citations?user=muYswsUAAAAJ" style="color: var(--color-accent);">Google Scholar</a> · 
+                Full list of publications in <a href="https://scholar.google.com.au/citations?user=muYswsUAAAAJ" style="color: var(--color-text-highlight);">Google Scholar</a> · 
                 <span style="font-size: 0.9rem;">* denotes equal contribution</span>
             </p>
 
@@ -40,206 +42,204 @@
             <div class="filter-tags">
                 <button class="filter-tag active" onclick="filterPublications('all')">All</button>
                 <button class="filter-tag" onclick="filterPublications('eeg')">🧠 EEG/Biosignals</button>
-                <button class="filter-tag" onclick="filterPublications('clinical')">🏥 Clinical Trials</button>
-                <button class="filter-tag" onclick="filterPublications('cancer')">🎗️ Cancer Care</button>
+                <button class="filter-tag" onclick="filterPublications('clinical')">🏥 Cancer Care & Clinical Trials</button>
+                <!-- <button class="filter-tag" onclick="filterPublications('cancer')">🎗️ Cancer Care</button> -->
                 <button class="filter-tag" onclick="filterPublications('imaging')">🔬 Comp. Imaging</button>
                 <button class="filter-tag" onclick="filterPublications('journal')">📄 Journal</button>
                 <button class="filter-tag" onclick="filterPublications('conference')">🎤 Conference</button>
             </div>
 
-            <!-- 2025/2026 Publications -->
+            <!-- 2026 Publications -->
             <div class="pub-category">
-                <h3>2025 / 2026</h3>
+                <h3>2026</h3>
                 <div class="pub-list">
                     <div class="pub-item" data-tags="eeg,conference" data-hidden="false">
-                        <div class="pub-year">ICLR 2026</div>
-                        <div class="pub-title">Tokenizing Single-Channel EEG with Time-Frequency Motif Learning</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, X. Piao, Z. Chen, J. Sun</div>
-                        <div class="pub-venue">The Fourteenth International Conference on Learning Representations (also Spotlight at NeurIPS TS4H 2025)</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2502.16060"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                        <div class="pub-title"> Neural Signals Generate Clinical Notes in the Wild </div>
+                        <div class="pub-authors"><strong>Jathurshan Pradeepkumar</strong>, Zheng Chen, and Jimeng Sun</div>
+                        <div class="pub-venue">arXiv preprint 2026 (In review at ICML 2026)</div>
+                        <div class="pub-special-note">First Clinical EEG Language Model! </div>
+                        <div class="pub-links"><a href="https://www.arxiv.org/abs/2601.22197"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a></div>
                     </div>
 
-                    <div class="pub-item" data-tags="cancer,conference" data-hidden="false">
-                        <div class="pub-year">AMIA 2025 · Oral</div>
-                        <div class="pub-title">Survivorship Navigator: Personalized Survivorship Care Plan Generation using Large Language Models</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, S. Pankaj Kumar, C.B. Reamer, M. Dreyer, J. Patel, D. Liebovitz, J. Sun</div>
-                        <div class="pub-venue">AMIA 2025 Annual Symposium</div>
-                        <div class="pub-links">
-                            <a href="https://www.medrxiv.org/content/10.1101/2025.03.27.25324782v1"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-play-circle"></i> Demo</a>
-                        </div>
+                    <div class="pub-item" data-tags="eeg,conference" data-hidden="false">
+                        <!-- <div ><span class="badge-publication">ICLR 2026</span></div> -->
+                        <div class="pub-title"> Tokenizing Single-Channel EEG with Time-Frequency Motif Learning <span class="badge-publication">ICLR 2026</span></div>
+                        <div class="pub-authors"><strong>Jathurshan Pradeepkumar</strong>, Xihao Piao, Zheng Chen, and Jimeng Sun</div>
+                        <div class="pub-venue">The Fourteenth International Conference on Learning Representations 2026 (also<span class="badge spotlight">Spotlight</span> at NeurIPS TS4H 2025)</div>
+                        <div class="pub-special-note">Single-Channel EEG Tokenizer! </div>
+                        <div class="pub-links"><a href="https://arxiv.org/abs/2502.16060"><i class="fas fa-file-pdf"></i> Paper</a><a href="https://github.com/Jathurshan0330/TFM-Tokenizer"><i class="fab fa-github"></i> Code</a><a href="https://drive.google.com/file/d/1LR_kQ3Kup1NMjapXAFPHRXpuCtjKcrSi/view?usp=sharing"><i class="fas fa-file-pdf"></i> Poster</a></div>
                     </div>
 
-                    <div class="pub-item" data-tags="clinical" data-hidden="false">
-                        <div class="pub-year">2025 · Preprint</div>
-                        <div class="pub-title">TrialPanorama: Database and Benchmark for Systematic Review and Design of Clinical Trials</div>
-                        <div class="pub-authors">Z. Wang, Q. Jin, J. Lin, J. Gao, <strong>J. Pradeepkumar</strong>, P. Jiang, B. Danek, Z. Lu, J. Sun</div>
-                        <div class="pub-venue">arXiv preprint</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                    <div class="pub-item" data-tags="eeg,conference" data-hidden="false">
+                        <!-- <div ><span class="badge-publication">ICLR 2026</span></div> -->
+                        <div class="pub-title"> How Well do Multimodal Models Reason on ECG Signals? </div>
+                        <div class="pub-authors">Maxwell A Xu, Harish Haresamudram, Catherine Wei Liu, Patrick Langer, <strong>Jathurshan Pradeepkumar</strong>, Wanting Mao, Sunita Ferns, Aradhana Verma, Jimeng Sun, Paul Schmiedmayer, Xin Liu, Daniel McDuff, Emily Fox and James Rehg</div>
+                        <div class="pub-venue">arXiv preprint 2026 (In review at ICML 2026)</div>
+                        <div class="pub-links"><a href="#"><i class="fas fa-file-pdf"></i> Paper</a><a href="#"><i class="fab fa-github"></i> Code</a></div>
                     </div>
 
-                    <div class="pub-item" data-tags="cancer,conference" data-hidden="false">
-                        <div class="pub-year">ML4H 2025</div>
-                        <div class="pub-title">Prostate-VarBench: A Benchmark with Interpretable TabNet Framework for Prostate Cancer Variant Classification</div>
-                        <div class="pub-authors">A.F.A. Tavara, U. Kumar, <strong>J. Pradeepkumar</strong>, J. Sun</div>
-                        <div class="pub-venue">Machine Learning for Health (Mentored research project)</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <div class="pub-item" data-tags="eeg,conference" data-hidden="false">
+                        <!-- <div ><span class="badge-publication">ICLR 2026</span></div> -->
+                        <div class="pub-title"> PyHealth 2.0: A Comprehensive Open-Source Toolkit for Accessible and Reproducible Clinical Deep Learning </div>
+                        <div class="pub-authors">John Wu, Yongda Fan, Zhenbang Wu, Paul Landes, Eric Schrock, Sayeed Sajjad Razin, Arjun Chatterjee, Naveen Baskaran, Joshua Steier, Andrea Fitzpatrick, Bilal Arif, Rian Atri, <strong>Jathurshan Pradeepkumar</strong>, Siddhartha Laghuvarapu, Junyi Gao, Adam R Cross, and Jimeng Sun</div>
+                        <div class="pub-venue">arXiv preprint 2026 (In review at ICML 2026)</div>
+                        <div class="pub-links"><a href="https://arxiv.org/pdf/2601.16414"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/sunlabuiuc/PyHealth"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://pyhealth.readthedocs.io/en/latest/"><i class="fas fa-book"></i> Documentation</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- 2025 Publications -->
+            <div class="pub-category">
+                <h3>2025</h3>
+                <div class="pub-list">
+                    <div class="pub-item" data-tags="clinical,conference" data-hidden="false">
+                        <div class="pub-title">Prostate-VarBench: A Benchmark with Interpretable TabNet Framework for Prostate Cancer Variant Classification <span class="badge-publication">ML4H 2025</span></div>
+                        <div class="pub-authors">Abraham Francisco Arellano Tavara, Umesh Kumar, <strong>Jathurshan Pradeepkumar</strong>, and Jimeng Sun</div>
+                        <div class="pub-venue">Machine Learning for Health 2025</div>
+                        <div class="pub-special-note">I mentored this research project (PyHealth Research Initiative)! </div>
+                        <div class="pub-links"><a href="https://arxiv.org/pdf/2511.09576"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/AbrahamArellano/uiuc-cancer-research/"><i class="fab fa-github"></i> Code</a></div>
+                    </div>
+
+                    <div class="pub-item" data-tags="clinical,conference" data-hidden="false">
+                        <div class="pub-title">TrialPanorama: Database and Benchmark for Systematic Review and Design of Clinical Trials</div>
+                        <div class="pub-authors">Zifeng Wang, Qiao Jin, Jiacheng Lin, Junyi Gao, <strong>Jathurshan Pradeepkumar</strong>, Pengcheng Jiang, Benjamin Danek, Zhiyong Lu, and Jimeng Sun</div>
+                        <div class="pub-venue">arXiv preprint 2025</div>
+                        <div class="pub-links"><a href="https://arxiv.org/pdf/2511.09576"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/RyanWangZf/TrialPanorama"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://huggingface.co/datasets/TrialPanorama/TrialPanorama-benchmark"><i class="fas fa-database"></i> Dataset</a>
+                        </div>
+                    </div>
+                    <div class="pub-item" data-tags="clinical,conference" data-hidden="false">
+                        <!-- <div class="pub-year">2025 · AMIA (Oral)</div> -->
+                        <div class="pub-title">Survivorship Navigator: Personalized Survivorship Care Plan Generation using Large Language Models <span class="badge-publication">AMIA 2025</span></div>
+                        <div class="pub-authors"><strong>Jathurshan Pradeepkumar </strong>, Shivam Pankaj Kumar, Courtney Bryce Reamer, Marie Dreyer, Jyoti Patel, David Liebovitz, and Jimeng Sun.</div>
+                        <div class="pub-venue">AMIA 2025 Annual Symposium<span class="badge oral">Oral</span></div>
+                        <div class="pub-links"><a href="https://www.medrxiv.org/content/10.1101/2025.03.27.25324782v1"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/Jathurshan0330/SN_SCP_Gen"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://www.loom.com/share/69f8382113d4421ab4bcf2cdfca3dad3"><i class="fas fa-play-circle"></i> Demo</a>
+                            <a href="https://www.youtube.com/watch?v=2Ix2RVAKcS0"><i class="fas fa-video"></i> Introduction Video</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+
 
             <!-- 2024 Publications -->
             <div class="pub-category">
                 <h3>2024</h3>
                 <div class="pub-list">
                     <div class="pub-item" data-tags="eeg,journal" data-hidden="false">
-                        <div class="pub-year">IEEE TNSRE</div>
-                        <div class="pub-title">Towards Interpretable Sleep Stage Classification Using Cross-Modal Transformers</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar*</strong>, M. Anandakumar*, V. Kugathasan, D. Suntharalingham, S.L. Kappel, A.C. De Silva, C.U. Edussooriya</div>
-                        <div class="pub-venue">IEEE Transactions on Neural Systems and Rehabilitation Engineering</div>
-                        <div class="pub-links">
-                            <a href="https://ieeexplore.ieee.org/abstract/document/10623416"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                        <!-- <div class="pub-year">2024 · IEEE TNSRE</div> -->
+                        <div class="pub-title">Towards Interpretable Sleep Stage Classification using Cross-Modal Transformers <span class="badge-publication">IEEE-TNSRE 2024</span></div>
+                        <div class="pub-authors"><strong>Jathurshan Pradeepkumar</strong>, Mithunjha Anandakumar, Vinith Kugathasan, Dhinesh Suntharalingham, Simon L Kappel, Anjula C De Silva, Chamira US Edussooriya.</div>
+                        <div class="pub-venue">IEEE Transactions on Neural Systems and Rehabilitation Engineering 2024</div>
+                        <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/10623416"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/Jathurshan0330/Cross-Modal-Transformer"><i class="fab fa-github"></i> Code</a></div>
                     </div>
 
-                    <div class="pub-item" data-tags="clinical" data-hidden="false">
-                        <div class="pub-year">Under Review · Nature Health</div>
+                    <div class="pub-item" data-tags="clinical,conference" data-hidden="false">
+                        <!-- <div class="pub-year">2024 · Under Review</div> -->
                         <div class="pub-title">Automatically Labeling Clinical Trial Outcomes: A Large-Scale Benchmark for Drug Development</div>
-                        <div class="pub-authors">C. Gao*, <strong>J. Pradeepkumar*</strong>, T. Das*, S. Thati, J. Sun</div>
-                        <div class="pub-venue">Under review at Nature Health (AIP)</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="https://youtu.be/Fj1H0AELGds"><i class="fas fa-video"></i> Webinar</a>
+                        <div class="pub-authors">Chufan Gao*, <strong>Jathurshan Pradeepkumar*</strong>, Trisha Das*, Shivashankar Thati, and Jimeng Sun.</div>
+                        <div class="pub-venue">Under review at Nature Health 2024</div>
+                        <div class="pub-links"><a href="https://arxiv.org/abs/2406.10292"><i class="fas fa-file-pdf"></i> Paper</a><a href="https://sunlabuiuc.github.io/CTO/"><i class="fas fa-project-diagram"></i> Project Page</a><a href="https://github.com/sunlabuiuc/CTO"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://huggingface.co/datasets/chufangao/CTO"><i class="fas fa-database"></i> Dataset</a>
+                        <a href="https://youtu.be/Fj1H0AELGds"><i class="fas fa-video"></i> Webinar</a>
+                        <a href="https://chufangao.github.io/CTOD/tutorials/resources/CTO_intro.mp4"><i class="fas fa-video"></i> Introduction Video</a>
                         </div>
                     </div>
-
-                    <div class="pub-item" data-tags="cancer,conference" data-hidden="false">
-                        <div class="pub-year">ASCO 2024 · Abstract</div>
-                        <div class="pub-title">Automated Survivorship Care Plan Generation Using Large Language Models</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, D. Liebovitz, J.D. Patel, J. Sun</div>
-                        <div class="pub-venue">ASCO Annual Meeting</div>
-                        <div class="pub-links">
-                            <a href="https://ascopubs.org/doi/abs/10.1200/JCO.2024.42.16_suppl.e13595"><i class="fas fa-file-pdf"></i> Abstract</a>
-                        </div>
+                    <div class="pub-item" data-tags="clinical,conference" data-hidden="false">
+                        <!-- <div class="pub-year">2025 · AMIA (Oral)</div> -->
+                        <div class="pub-title">Automated survivorship care plan generation using large language models. <span class="badge-publication">ASCO 2024</span></div>
+                        <div class="pub-authors"><strong>Jathurshan Pradeepkumar </strong>, David Liebovitz, Jyoti D Patel, and Jimeng Sun.</div>
+                        <div class="pub-venue">American Society of Clinical Oncology 2024</div>
+                        <div class="pub-links"><a href="https://ascopubs.org/doi/abs/10.1200/JCO.2024.42.16_suppl.e13595"><i class="fas fa-file-pdf"></i> Paper</a> </div>
                     </div>
+                    
                 </div>
             </div>
 
-            <!-- 2023 Publications -->
             <div class="pub-category">
                 <h3>2023</h3>
                 <div class="pub-list">
                     <div class="pub-item" data-tags="eeg,conference" data-hidden="false">
-                        <div class="pub-year">IEEE SMC 2023</div>
-                        <div class="pub-title">A Knowledge Distillation Framework for Enhancing Ear-EEG Based Sleep Staging with Scalp-EEG Data</div>
-                        <div class="pub-authors">M. Anandakumar*, <strong>J. Pradeepkumar*</strong>, S.L. Kappel, C.U. Edussooriya, A.C. De Silva</div>
-                        <div class="pub-venue">IEEE International Conference on Systems, Man, and Cybernetics</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-
-                    <div class="pub-item" data-tags="imaging" data-hidden="false">
-                        <div class="pub-year">arXiv 2023</div>
-                        <div class="pub-title">Contrastive Deep Encoding Enables Uncertainty-aware Machine-learning-assisted Histopathology</div>
-                        <div class="pub-authors">N. Sivaroopan, C. Jayanga, C. Ekanayake, H. Watawana, <strong>J. Pradeepkumar</strong>, M. Anandakumar, R. Rodrigo, C.U. Edussooriya, D.N. Wadduwage</div>
-                        <div class="pub-venue">arXiv preprint</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                        </div>
+                        <!-- <div class="pub-year">2024 · IEEE TNSRE</div> -->
+                        <div class="pub-title">A Knowledge Distillation Framework for Enhancing Ear-EEG Based Sleep Staging with Scalp-EEG Data
+                            <span class="badge-publication">IEEE-SMC 2023</span></div>
+                        <div class="pub-authors">Mithunjha Anandakumar*, <strong>Jathurshan Pradeepkumar*</strong>, Simon L Kappel, Chamira US Edussooriya, and Anjula C De Silva.</div>
+                        <div class="pub-venue">IEEE International Conference on Systems, Man, and Cybernetics 2023</div>
+                        <div class="pub-links"><a href="https://arxiv.org/pdf/2211.02638"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/Mithunjha/EarEEG_KnowledgeDistillation"><i class="fab fa-github"></i> Code</a></div>
                     </div>
 
                     <div class="pub-item" data-tags="imaging,conference" data-hidden="false">
-                        <div class="pub-year">OSA ISA 2023</div>
+                        <!-- <div class="pub-year">2024 · IEEE TNSRE</div> -->
                         <div class="pub-title">Quantification of Cells in Native Tissues with Object Detection and Weak Supervision</div>
-                        <div class="pub-authors">R. Thushara*, <strong>J. Pradeepkumar*</strong>, J. Corrigan, B.P. Engelward, D.N. Wadduwage</div>
-                        <div class="pub-venue">Imaging Systems and Applications, Optica Publishing Group</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                        </div>
+                        <div class="pub-authors">Rusiru Thushara*, <strong>Jathurshan Pradeepkumar*</strong>, Joshua Corrigan, Bevin Engelward, and Dushan Wadduwage.</div>
+                        <div class="pub-venue">Optical Society of America 2023</div>
+                        <div class="pub-links"><a href="https://opg.optica.org/abstract.cfm?uri=ISA-2023-ITu2E.4"><i class="fas fa-file-pdf"></i> Paper</a>
                     </div>
 
                     <div class="pub-item" data-tags="imaging,conference" data-hidden="false">
-                        <div class="pub-year">FoM 2023 · Abstract</div>
-                        <div class="pub-title">Transformers Can Decide Where to Image at What Resolution</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, M. Anandakumar, Y. Jayawardena, D.N. Wadduwage</div>
-                        <div class="pub-venue">Focus on Microscopy</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Abstract</a>
-                        </div>
+                        <!-- <div class="pub-year">2024 · IEEE TNSRE</div> -->
+                        <div class="pub-title">Contrastive Deep Encoding Enables Uncertainty-aware Machine-learning-assisted Histopathology</div>
+                        <div class="pub-authors">Nirhoshan Sivaroopan, Chamuditha Jayanga, Chalani Ekanayake, Hasindri Watawana, <strong>Jathurshan Pradeepkumar</strong>, Mithunjha Anandakumar, Ranga Rodrigo, Chamira Edussooriya, and Dushan Wadduwage.</div>
+                        <div class="pub-venue">arXiv preprint 2023</div>
+                        <div class="pub-links"><a href="https://arxiv.org/pdf/2309.07113"><i class="fas fa-file-pdf"></i> Paper</a>
                     </div>
+
+                    
+                    
                 </div>
             </div>
-
-            <!-- 2022 Publications -->
             <div class="pub-category">
                 <h3>2022</h3>
                 <div class="pub-list">
                     <div class="pub-item" data-tags="eeg,conference" data-hidden="false">
-                        <div class="pub-year">IEEE ICASSP 2022</div>
-                        <div class="pub-title">Towards Accurate Cross-Domain In-Bed Human Pose Estimation</div>
-                        <div class="pub-authors">M. Afham*, U. Haputhanthri*, <strong>J. Pradeepkumar*</strong>, M. Anandakumar, A. De Silva, C.U. Edussooriya</div>
-                        <div class="pub-venue">IEEE International Conference on Acoustics, Speech and Signal Processing</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                        <!-- <div class="pub-year">2024 · IEEE TNSRE</div> -->
+                        <div class="pub-title">Towards accurate cross-domain in-bed human pose estimation
+                            <span class="badge-publication">ICASSP 2022</span></div>
+                        <div class="pub-authors">Mohamed Afham*, Udith Haputhanthri*, <strong>Jathurshan Pradeepkumar*</strong>, Mithunjha Anandakumar, Ashwin De Silva, and Chamira US Edussooriya.</div>
+                        <div class="pub-venue"> IEEE International Conference on Acoustics, Speech and Signal Processing 2022</div>
+                        <div class="pub-links"><a href="https://arxiv.org/pdf/2110.03578"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/MohamedAfham/CD_HPE"><i class="fab fa-github"></i> Code</a></div>
                     </div>
-
-                    <div class="pub-item" data-tags="eeg" data-hidden="false">
-                        <div class="pub-year">Thesis 2022</div>
-                        <div class="pub-title">Interpretable Multi-Modal Sleep Monitoring System using Ear-EEG and EOG</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, M. Anandakumar, V. Kugathasan, D. Suntharalingham</div>
-                        <div class="pub-venue">Undergraduate Graduation Project Thesis, University of Moratuwa, Sri Lanka</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Thesis</a>
-                            <a href="#"><i class="fas fa-video"></i> Video</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
-            <!-- 2021 Publications -->
             <div class="pub-category">
                 <h3>2021</h3>
                 <div class="pub-list">
                     <div class="pub-item" data-tags="eeg,conference" data-hidden="false">
-                        <div class="pub-year">IEEE EMBC 2021</div>
-                        <div class="pub-title">Decoding of Hand Gestures from Electrocorticography with LSTM Based Deep Neural Network</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, M. Anandakumar, V. Kugathasan, T.D. Lalitharatne, A.C. De Silva, S.L. Kappel</div>
-                        <div class="pub-venue">43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="#"><i class="fas fa-desktop"></i> Slides</a>
-                        </div>
+                        <!-- <div class="pub-year">2024 · IEEE TNSRE</div> -->
+                        <div class="pub-title">Decoding of hand gestures from electrocorticography with LSTM based deep neural network
+                            <span class="badge-publication">EMBC 2021</span></div>
+                        <div class="pub-authors"><strong>Jathurshan Pradeepkumar</strong>, Mithunjha Anandakumar, Vinith Kugathasan, Thilina D Lalitharatne, Anjula C De Silva, and Simon L Kappel.</div>
+                        <div class="pub-venue"> 43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society 2021</div>
+                        <div class="pub-links"><a href="https://drive.google.com/file/d/1OuZZipw6CxR8XdfEZiRgEXzt8oEICb1u/view"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <!-- <a href="https://github.com/MohamedAfham/CD_HPE"><i class="fab fa-github"></i> Code</a> -->
+                        </div> 
                     </div>
-
-                    <div class="pub-item" data-tags="imaging" data-hidden="false">
-                        <div class="pub-year">2021</div>
+                    <div class="pub-item" data-tags="imaging,conference" data-hidden="false">
                         <div class="pub-title">Physics Augmented U-Net: A High-Frequency Aware Generative Prior for Microscopy</div>
-                        <div class="pub-authors"><strong>J. Pradeepkumar</strong>, M. Anandakumar, V. Kugathasan, A. Seeber, D.N. Wadduwage</div>
-                        <div class="pub-venue">Research Project</div>
-                        <div class="pub-links">
-                            <a href="#"><i class="fas fa-file-pdf"></i> Report</a>
-                        </div>
+                        <div class="pub-authors"><strong>Jathurshan Pradeepkumar</strong>, Mithunjha Anandakumar, Vinith Kugathasan, Andrew Seeber, and Dushan N Wadduwage.</div>
+                        <div class="pub-venue">bioRxiv preprint 2021</div>
+                        <div class="pub-links"><a href="https://www.biorxiv.org/content/10.1101/2021.12.01.470743v1.full.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <!-- <a href="https://github.com/MohamedAfham/CD_HPE"><i class="fab fa-github"></i> Code</a>-->
+                        </div>  
                     </div>
+                    
                 </div>
             </div>
 
             <p style="text-align: center; margin-top: 3rem; color: var(--color-text-muted);">
-                <a href="https://scholar.google.com.au/citations?user=muYswsUAAAAJ" style="color: var(--color-accent);">
+                <a href="https://scholar.google.com.au/citations?user=muYswsUAAAAJ" style="color: var(--color-text-highlight);">
                     <i class="ai ai-google-scholar"></i> View on Google Scholar
                 </a>
             </p>
@@ -249,6 +249,7 @@
     <footer>
         <div class="footer-links">
             <a href="mailto:jp65@illinois.edu"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:jathurshanpradeepkumar@gmail.com" title="Personal Email"><i class="fas fa-envelope"></i></a>
             <a href="https://scholar.google.com.au/citations?user=muYswsUAAAAJ"><i class="ai ai-google-scholar"></i></a>
             <a href="https://github.com/Jathurshan0330"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/jathurshan-pradeepkumar-319b52104"><i class="fab fa-linkedin-in"></i></a>

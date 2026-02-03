@@ -48,24 +48,33 @@ document.querySelectorAll('.pub-item, .timeline-item, .award-item, .edu-card, .n
 
 // Publication Filtering (for publications page)
 function filterPublications(tag) {
-    const allTags = document.querySelectorAll('.filter-tag');
-    const allPubs = document.querySelectorAll('.pub-item[data-tags]');
-    
-    // Update active state
-    allTags.forEach(t => t.classList.remove('active'));
+    const items = document.querySelectorAll('.pub-item');
+    const categories = document.querySelectorAll('.pub-category');
+    const filterTags = document.querySelectorAll('.filter-tag');
+
+    // Update active filter tag
+    filterTags.forEach(t => t.classList.remove('active'));
     event.target.classList.add('active');
-    
-    // Filter publications
-    if (tag === 'all') {
-        allPubs.forEach(pub => pub.setAttribute('data-hidden', 'false'));
-    } else {
-        allPubs.forEach(pub => {
-            const tags = pub.getAttribute('data-tags').split(',');
-            if (tags.includes(tag)) {
-                pub.setAttribute('data-hidden', 'false');
-            } else {
-                pub.setAttribute('data-hidden', 'true');
-            }
-        });
-    }
+
+    // Filter items
+    items.forEach(item => {
+        const tags = item.getAttribute('data-tags').split(',');
+        if (tag === 'all' || tags.includes(tag)) {
+            item.setAttribute('data-hidden', 'false');
+            item.style.display = '';
+        } else {
+            item.setAttribute('data-hidden', 'true');
+            item.style.display = 'none';
+        }
+    });
+
+    // Hide year sections with no visible publications
+    categories.forEach(category => {
+        const visibleItems = category.querySelectorAll('.pub-item[data-hidden="false"]');
+        if (visibleItems.length === 0) {
+            category.style.display = 'none';
+        } else {
+            category.style.display = '';
+        }
+    });
 }
